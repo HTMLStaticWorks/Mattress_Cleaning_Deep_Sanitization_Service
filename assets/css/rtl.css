@@ -1,0 +1,118 @@
+/* ==========================================================================
+   RIGHT-TO-LEFT (RTL) STYLESHEET OVERRIDES
+   Mattress Cleaning & Deep Sanitization Service
+   ========================================================================== */
+
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .brand-logo {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: -320px;
+}
+
+[dir="rtl"] .mobile-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .badge-top-left {
+  left: auto;
+  right: -20px;
+}
+
+[dir="rtl"] .badge-bottom-right {
+  right: auto;
+  left: -20px;
+}
+
+[dir="rtl"] .ba-image-after {
+  border-right: none;
+  border-left: 2px solid var(--accent);
+}
+
+[dir="rtl"] .label-before {
+  left: auto;
+  right: 20px;
+}
+
+[dir="rtl"] .label-after {
+  right: auto;
+  left: 20px;
+}
+
+[dir="rtl"] .service-card:hover .explore-link i {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .faq-header i {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .newsletter-form {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btn i {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .form-control {
+  text-align: right;
+}
+
+[dir="rtl"] select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 1.15rem center;
+  background-size: 1rem;
+  padding-left: 2.75rem;
+  padding-right: 1.15rem;
+}
+
+[dir="rtl"] input[type="date"].form-control {
+  text-align: right;
+  direction: rtl;
+  position: relative;
+}
+
+[dir="rtl"] input[type="date"]::-webkit-datetime-edit {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 1.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+[dir="rtl"] .auth-form-group {
+  text-align: right;
+}
+
+[dir="rtl"] .auth-password-input {
+  padding-right: 1.15rem;
+  padding-left: 2.5rem;
+}
+
+[dir="rtl"] .auth-password-icon {
+  right: auto;
+  left: 1rem;
+}

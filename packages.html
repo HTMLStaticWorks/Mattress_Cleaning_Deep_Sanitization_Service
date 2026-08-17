@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Packages & Pricing Matrix | PureSanity</title>
+  <meta name="description" content="Compare our mattress and sofa cleaning packages. Transparent pricing, clear feature breakdown, and simple online booking.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css" id="rtl-stylesheet" disabled>
+  
+  <style>
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 3rem;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+    .matrix-table th, .matrix-table td {
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .matrix-table th:first-child, .matrix-table td:first-child {
+      text-align: left;
+      font-weight: 700;
+    }
+    .matrix-table th {
+      background: rgba(var(--primary-rgb), 0.06);
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--text-main);
+    }
+    .matrix-table th.featured-col {
+      background: rgba(232, 168, 78, 0.15);
+      color: var(--primary);
+    }
+    @media (max-width: 768px) {
+      .table-responsive-wrapper {
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="#123B3A"/>
+            <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+            <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+          </svg>
+          <span>PURE<span class="highlight">SANITY</span></span>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-dropdown">
+            <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Home 1 - Main Landing</a></li>
+              <li><a href="home2.html">Home 2 - Hygiene Journal</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="packages.html" class="nav-link active">Packages</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="icon-btn theme-toggle-btn"><i class="fas fa-cog"></i></button>
+          <button class="icon-btn rtl-toggle-btn"><i class="fas fa-right-left"></i></button>
+          <a href="login.html" class="btn btn-accent header-cta"><i class="fas fa-user"></i> Login</a>
+          <button class="hamburger-btn"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo"><span>PURE<span class="highlight">SANITY</span></span></a>
+      <button class="drawer-close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home 1 - Main Landing</a></li>
+      <li><a href="home2.html" class="drawer-link">Home 2 - Hygiene Journal</a></li>
+      <li><a href="about.html" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link">Services</a></li>
+      <li><a href="blog.html" class="drawer-link">Blog</a></li>
+      <li><a href="packages.html" class="drawer-link">Packages</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer" style="padding: 1.5rem 1rem; border-top: 1px solid var(--border-color); text-align: center;">
+      <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1rem;">
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-cog"></i></button>
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL"><i class="fas fa-right-left"></i></button>
+      </div>
+      <a href="login.html" class="btn btn-accent" style="width: 100%;"><i class="fas fa-user"></i> Login</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="section-padding" style="padding-top: 9rem; background: var(--card-bg); border-bottom: 1px solid var(--border-color);">
+      <div class="container" style="text-align: center; max-width: 760px;">
+        <span class="eyebrow">TRANSPARENT PRICING</span>
+        <h1>PACKAGE COMPARISON MATRIX</h1>
+        <p>Choose the level of cleaning and sanitization precision that best suits your home requirements.</p>
+      </div>
+    </section>
+
+    <!-- PRICING TIERS OVERVIEW -->
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="pricing-grid">
+          <!-- Essential -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="pricing-title">Essential</h3>
+              <p style="font-size: 0.875rem;">Surface vacuum & spot treatment</p>
+              <div class="pricing-price">$69</div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Surface HEPA Vacuuming</li>
+              <li><i class="fas fa-check"></i> Basic Spot Treatment</li>
+              <li><i class="fas fa-check"></i> Standard Drying Guidance</li>
+            </ul>
+            <a href="contact.html?package=essential" class="btn btn-outline" style="width: 100%;">Select Essential</a>
+          </div>
+
+          <!-- Deep Clean -->
+          <div class="pricing-card featured">
+            <span class="featured-ribbon">Most Popular</span>
+            <div class="pricing-card-header">
+              <h3 class="pricing-title">Deep Clean</h3>
+              <p style="font-size: 0.875rem;">Deep extraction & UV sanitization</p>
+              <div class="pricing-price">$119</div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> High-Pressure Micro Extraction</li>
+              <li><i class="fas fa-check"></i> Full UV Light Sanitization Pass</li>
+              <li><i class="fas fa-check"></i> Enzyme Deodorizing Finish</li>
+            </ul>
+            <a href="contact.html?package=deep-clean" class="btn btn-accent" style="width: 100%;">Select Deep Clean</a>
+          </div>
+
+          <!-- Complete Hygiene -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="pricing-title">Complete Hygiene</h3>
+              <p style="font-size: 0.875rem;">Total bedroom & couch care</p>
+              <div class="pricing-price">$199</div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Mattress + 3-Seater Sofa</li>
+              <li><i class="fas fa-check"></i> Full UV Light Sanitization</li>
+              <li><i class="fas fa-check"></i> Priority Same-Day Dispatch</li>
+            </ul>
+            <a href="contact.html?package=complete" class="btn btn-outline" style="width: 100%;">Select Complete</a>
+          </div>
+        </div>
+
+        <!-- DETAILED MATRIX TABLE -->
+        <div class="table-responsive-wrapper" style="margin-top: 4rem;">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th style="width: 34%;">Feature / Service Scope</th>
+                <th style="width: 22%;">Essential ($69)</th>
+                <th class="featured-col" style="width: 22%;">Deep Clean ($119)</th>
+                <th style="width: 22%;">Complete ($199)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HEPA Surface Vacuuming</td>
+                <td><i class="fas fa-check" style="color: var(--primary);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--primary);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--primary);"></i></td>
+              </tr>
+              <tr>
+                <td>High-Pressure Micro Extraction</td>
+                <td><i class="fas fa-minus" style="color: var(--text-muted);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--accent);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--accent);"></i></td>
+              </tr>
+              <tr>
+                <td>Stain Treatment Depth</td>
+                <td>Surface Spotting</td>
+                <td>Deep Organic Treatment</td>
+                <td>Multi-Surface Advanced Treatment</td>
+              </tr>
+              <tr>
+                <td>UV Light Sanitization Pass</td>
+                <td><i class="fas fa-minus" style="color: var(--text-muted);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--accent);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--accent);"></i></td>
+              </tr>
+              <tr>
+                <td>Deodorizing Enzyme Finish</td>
+                <td><i class="fas fa-minus" style="color: var(--text-muted);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--primary);"></i></td>
+                <td><i class="fas fa-check" style="color: var(--primary);"></i></td>
+              </tr>
+              <tr>
+                <td>Item Inclusion</td>
+                <td>1 Mattress</td>
+                <td>1 Mattress + 2 Pillows</td>
+                <td>1 Mattress + 1 Sofa + 4 Pillows</td>
+              </tr>
+              <tr>
+                <td>Technician Sign-Off Report</td>
+                <td>Basic</td>
+                <td>Comprehensive</td>
+                <td>VIP Inspection Report</td>
+              </tr>
+              <tr>
+                <td>Booking Dispatch Priority</td>
+                <td>Standard</td>
+                <td>Priority Window</td>
+                <td>Same-Day Guaranteed Window</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="final-cta-banner">
+          <img src="image/HHZ4Zm5hN92dmAQZLXfH4gGqvB8Gk0VfYqupTzXUiPyIZb5bsWShZ4RroW9Rx6xSZJa7ww0wHm56Y3ZehI201b3gEjHwFqMbpEDlKxvI5Yl-yypw3ZyNThmDAGVT_-dtKwiHGmbmqYxMK82MHRnz_6j9WUitwUxIB3h0O0Bu0B24B.jpg" alt="Bedroom Background" class="cta-bg-image">
+          <div class="cta-content">
+            <h2>MAKE YOUR BED FEEL FRESH AGAIN.</h2>
+            <p>Book a professional home cleaning visit and give your mattress and upholstery a deeper clean today.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-accent"><i class="fas fa-calendar-check"></i> Book a Home Visit</a>
+              <a href="tel:+18005550199" class="btn btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.4);"><i class="fas fa-phone"></i> Call Our Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="#123B3A"/>
+              <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+              <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+            </svg>
+            <span>PURE<span class="highlight">SANITY</span></span>
+          </a>
+          <p>Professional home hygiene, mattress cleaning, and sofa extraction service for healthier living spaces.</p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+            <a href="#" class="icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-col">
+          <h4>SERVICES</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#mattress">Mattress Cleaning</a></li>
+            <li><a href="services.html#sofa">Sofa Cleaning</a></li>
+            <li><a href="services.html#pillow">Pillow Sanitization</a></li>
+            <li><a href="services.html#upholstery">Upholstery Care</a></li>
+            <li><a href="services.html#stain">Stain Treatment</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+          <h4>COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html">Packages & Pricing</a></li>
+            <li><a href="blog.html">Hygiene Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Support & Newsletter -->
+        <div class="footer-col">
+          <h4>NEWSLETTER</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Subscribe for home care guides and seasonal service offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-accent" style="padding: 0.65rem 1rem;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 PureSanity Mattress Cleaning & Deep Sanitization Service. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

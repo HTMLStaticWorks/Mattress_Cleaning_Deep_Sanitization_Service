@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Expansion Coming Soon | PureSanity</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    .teaser-page-wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      background: #0B1716;
+      color: #FFFFFF;
+      position: relative;
+    }
+    .teaser-card {
+      max-width: 600px;
+      position: relative;
+      z-index: 5;
+    }
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2.5rem 0;
+    }
+    .timer-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(185, 216, 209, 0.2);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 0.5rem;
+    }
+    .timer-num {
+      font-family: var(--font-heading);
+      font-size: 2.25rem;
+      color: var(--secondary);
+    }
+    .timer-label {
+      font-size: 0.75rem;
+      color: #94A8A4;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 480px) {
+      .countdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="teaser-page-wrap">
+    <div class="teaser-card">
+      <a href="index.html" class="brand-logo" style="justify-content: center; margin-bottom: 2rem; color: #fff;">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#123B3A"/>
+          <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+          <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+        </svg>
+        <span style="color: #fff;">PURE<span class="highlight">SANITY</span></span>
+      </a>
+
+      <span class="tech-badge" style="background: rgba(185,216,209,0.1); color: var(--secondary); border-color: rgba(185,216,209,0.25);">NEW FLEET EXPANSION</span>
+      <h1 style="color: #FFFFFF; margin: 1.5rem 0; font-size: clamp(2.2rem, 4vw, 3.5rem);">OUR SUBURBAN SERVICE FLEET IS LAUNCHING SOON</h1>
+      <p style="color: #94A8A4; font-size: 1.05rem;">We are deploying 12 new mobile sanitization units with same-day booking capability in your area.</p>
+
+      <!-- Countdown -->
+      <div class="countdown-grid">
+        <div class="timer-box">
+          <div class="timer-num">14</div>
+          <div class="timer-label">Days</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-num">08</div>
+          <div class="timer-label">Hours</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-num">42</div>
+          <div class="timer-label">Minutes</div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-num">19</div>
+          <div class="timer-label">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Subscription -->
+      <form class="newsletter-form" style="max-width: 480px; margin: 0 auto;" onsubmit="event.preventDefault(); alert('You will be notified as soon as service launches in your zip code!'); this.reset();">
+        <input type="email" placeholder="Enter your email for launch priority" required style="background: #122524; color: #fff; border-color: rgba(185,216,209,0.2);">
+        <button type="submit" class="btn btn-accent"><i class="fas fa-bell"></i> Notify Me</button>
+      </form>
+
+      <div style="margin-top: 2rem;">
+        <a href="index.html" style="color: var(--secondary); font-weight: 600; font-size: 0.9rem;"><i class="fas fa-arrow-left"></i> Back to Main Website</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Login | PureSanity Portal</title>
+  <meta name="description" content="Access your PureSanity home visit history, service schedules, and recurring maintenance reminders.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css" id="rtl-stylesheet" disabled>
+  
+  <style>
+    .auth-page-wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      background: var(--bg-light);
+    }
+    .auth-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      max-width: 440px;
+      width: 100%;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 0.85rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-color);
+      background: var(--card-bg);
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-bottom: 0.75rem;
+      transition: var(--transition);
+    }
+    .social-btn:hover {
+      background: var(--bg-light);
+      border-color: var(--primary);
+    }
+    .auth-divider {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+    .auth-divider::before, .auth-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+    .auth-divider span {
+      padding: 0 1rem;
+    }
+    
+    .auth-actions {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      display: flex;
+      gap: 0.75rem;
+    }
+    @media (max-width: 576px) {
+      .auth-page-wrap {
+        flex-direction: column;
+      }
+      .auth-actions {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        max-width: 440px;
+        justify-content: flex-end;
+        margin-bottom: 1.25rem;
+      }
+      .auth-card {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-page-wrap">
+    <div class="auth-actions">
+      <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+      <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL" title="Toggle RTL"><i class="fas fa-right-left"></i></button>
+    </div>
+    
+    <div class="auth-card">
+      <a href="index.html" class="brand-logo" style="justify-content: center; margin-bottom: 1.5rem;">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#123B3A"/>
+          <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+          <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+        </svg>
+        <span>PURE<span class="highlight">SANITY</span></span>
+      </a>
+
+      <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">WELCOME BACK</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">Log in to manage home visits & service schedules.</p>
+
+      <form id="login-form" onsubmit="event.preventDefault(); alert('Login successful! Redirecting...'); window.location.href='index.html';">
+        <div class="form-group auth-form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="name@domain.com" required>
+        </div>
+
+        <div class="form-group auth-form-group">
+          <label class="form-label" style="margin-bottom: 0.5rem; display: block;">Password</label>
+          <div style="position: relative;">
+            <input type="password" class="form-control auth-password-input" placeholder="••••••••" required minlength="8">
+            <i class="fas fa-eye auth-password-icon" onclick="const input = this.previousElementSibling; if (input.type === 'password') { input.type = 'text'; this.classList.remove('fa-eye'); this.classList.add('fa-eye-slash'); } else { input.type = 'password'; this.classList.remove('fa-eye-slash'); this.classList.add('fa-eye'); }"></i>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+            <label style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.25rem; cursor: pointer;">
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" style="font-size: 0.85rem; color: var(--accent); font-weight: 600;">Forgot Password?</a>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 1.5rem; margin-bottom: 1.5rem;">Sign In</button>
+      </form>
+
+      <div class="auth-divider"><span>OR CONTINUE WITH</span></div>
+
+      <!-- Social Logins -->
+      <button class="social-btn"><i class="fab fa-google" style="color: #ea4335;"></i> Continue with Google</button>
+      <button class="social-btn"><i class="fab fa-apple"></i> Continue with Apple</button>
+
+      <div style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+        Don't have an account? <a href="register.html" style="color: var(--primary); font-weight: 700;">Create Account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

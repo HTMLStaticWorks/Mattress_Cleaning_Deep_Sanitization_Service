@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Home Visit & Contact Us | PureSanity</title>
+  <meta name="description" content="Schedule a professional mobile home visit for mattress cleaning, sofa sanitization, or upholstery extraction. Fast response & clear booking window.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css" id="rtl-stylesheet" disabled>
+  
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+    @media (max-width: 991px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .booking-card-form {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+    @media (max-width: 768px) {
+      .booking-card-form { padding: 1.75rem; }
+    }
+    .file-upload-box {
+      border: 2px dashed var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      background: var(--bg-light);
+    }
+    .file-upload-box:hover {
+      border-color: var(--primary);
+      background: rgba(var(--primary-rgb), 0.04);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="#123B3A"/>
+            <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+            <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+          </svg>
+          <span>PURE<span class="highlight">SANITY</span></span>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-dropdown">
+            <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Home 1 - Main Landing</a></li>
+              <li><a href="home2.html">Home 2 - Hygiene Journal</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="packages.html" class="nav-link">Packages</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="icon-btn theme-toggle-btn"><i class="fas fa-cog"></i></button>
+          <button class="icon-btn rtl-toggle-btn"><i class="fas fa-right-left"></i></button>
+          <a href="login.html" class="btn btn-accent header-cta"><i class="fas fa-user"></i> Login</a>
+          <button class="hamburger-btn"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo"><span>PURE<span class="highlight">SANITY</span></span></a>
+      <button class="drawer-close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home 1 - Main Landing</a></li>
+      <li><a href="home2.html" class="drawer-link">Home 2 - Hygiene Journal</a></li>
+      <li><a href="about.html" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link">Services</a></li>
+      <li><a href="blog.html" class="drawer-link">Blog</a></li>
+      <li><a href="packages.html" class="drawer-link">Packages</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer" style="padding: 1.5rem 1rem; border-top: 1px solid var(--border-color); text-align: center;">
+      <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1rem;">
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-cog"></i></button>
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL"><i class="fas fa-right-left"></i></button>
+      </div>
+      <a href="login.html" class="btn btn-accent" style="width: 100%;"><i class="fas fa-user"></i> Login</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="section-padding" style="padding-top: 9rem; background: var(--card-bg); border-bottom: 1px solid var(--border-color);">
+      <div class="container" style="text-align: center; max-width: 760px;">
+        <span class="eyebrow">RESERVE A HOME VISIT</span>
+        <h1>SCHEDULE YOUR DEEP SANITIZATION</h1>
+        <p>Fill out the service request form below. Our mobile dispatch coordinator will confirm your arrival window within 1 hour.</p>
+      </div>
+    </section>
+
+    <!-- FORM & DETAILS SECTION -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Booking Form -->
+          <div class="booking-card-form">
+            <h2 style="margin-bottom: 1.5rem;">Home Visit Booking Request</h2>
+            
+            <form id="booking-form" novalidate>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+                  <div class="invalid-feedback">Please enter a valid phone number.</div>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" placeholder="name@domain.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Service Type *</label>
+                  <select class="form-control" required>
+                    <option value="">Select Service...</option>
+                    <option value="mattress">Mattress Deep Extraction</option>
+                    <option value="sofa">Sofa / Upholstery Cleaning</option>
+                    <option value="pillow">Pillow & Accessories Care</option>
+                    <option value="package">Complete Hygiene Package</option>
+                    <option value="commercial">Commercial / Hotel Contract</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Home Visit Street Address *</label>
+                <input type="text" class="form-control" placeholder="123 Hygiene Ave, Apt 4B, City" required>
+              </div>
+
+              <div class="form-row-3">
+                <div class="form-group">
+                  <label class="form-label">Item / Mattress Type</label>
+                  <select class="form-control">
+                    <option value="king">King Size</option>
+                    <option value="queen">Queen Size</option>
+                    <option value="double">Double Size</option>
+                    <option value="single">Single Size</option>
+                    <option value="sofa">3-Seater Sofa</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">No. of Items</label>
+                  <input type="number" class="form-control" value="1" min="1" max="20">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Preferred Date *</label>
+                  <input type="date" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Preferred Time Window</label>
+                <select class="form-control">
+                  <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                  <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                  <option value="evening">Late Afternoon (4:00 PM - 7:00 PM)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Upload Fabric Photos (Optional)</label>
+                <div class="file-upload-box" onclick="document.getElementById('photo-input').click();">
+                  <i class="fas fa-cloud-arrow-up" style="font-size: 2rem; color: var(--accent); margin-bottom: 0.5rem; display: block;"></i>
+                  <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-main);">Click to attach fabric or stain photos</span>
+                  <small style="display: block; color: var(--text-muted); margin-top: 0.25rem;">PNG, JPG up to 10MB</small>
+                  <input type="file" id="photo-input" style="display: none;" accept="image/*" onchange="alert('Photo attached successfully!');">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Additional Notes</label>
+                <textarea class="form-control" rows="3" placeholder="Tell us about specific stains, elevator access, or pet presence..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 1rem;"><i class="fas fa-paper-plane"></i> Request Home Visit</button>
+            </form>
+          </div>
+
+          <!-- Contact Sidebar -->
+          <div>
+            <div class="contact-sidebar-card" style="background: var(--card-bg); border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
+              <h3 style="margin-bottom: 1.25rem;">Direct Contact</h3>
+              
+              <div class="info-row-item" style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: center;">
+                <div class="step-icon" style="margin: 0;"><i class="fas fa-phone"></i></div>
+                <div>
+                  <small style="color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Customer Hotline</small>
+                  <div style="font-weight: 700; font-size: 1.1rem; color: var(--primary);">+1 (800) 555-0199</div>
+                </div>
+              </div>
+
+              <div class="info-row-item" style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: center;">
+                <div class="step-icon" style="margin: 0;"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <small style="color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Dispatch Desk</small>
+                  <div style="font-weight: 700; font-size: 1rem;">dispatch@puresanity.com</div>
+                </div>
+              </div>
+
+              <div class="info-row-item" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="step-icon" style="margin: 0;"><i class="fas fa-clock"></i></div>
+                <div>
+                  <small style="color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Service Hours</small>
+                  <div style="font-weight: 600; font-size: 0.95rem;">Mon - Sun: 7:30 AM - 8:00 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Guarantee Box -->
+            <div class="guarantee-box" style="background: var(--primary); color: #fff; border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-md);">
+              <i class="fas fa-shield-cat" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; display: block;"></i>
+              <h3 style="color: #fff; margin-bottom: 0.75rem;">100% Satisfaction Promise</h3>
+              <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin: 0;">
+                If you are not completely satisfied with the cleanliness of your fabric after technician sign-off, we will return within 48 hours for a complimentary re-inspection pass.
+              </p>
+            </div>
+
+            <!-- Location Map -->
+            <div class="map-box" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); margin-top: 2rem; border: 1px solid var(--border-color); height: 250px;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.17087611094!2d-122.5076402434032!3d37.7576792742918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1714412345678!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SUCCESS CONFIRMATION MODAL -->
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-icon"><i class="fas fa-circle-check"></i></div>
+      <h2 style="margin-bottom: 0.5rem;">BOOKING REQUEST RECEIVED!</h2>
+      <p style="margin-bottom: 2rem;">Thank you for scheduling with PureSanity. Our mobile dispatch coordinator will call or email you within 60 minutes to confirm your technician arrival window.</p>
+      <button id="close-modal-btn" class="btn btn-accent" style="width: 100%;">Return to Website</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="#123B3A"/>
+              <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+              <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+            </svg>
+            <span>PURE<span class="highlight">SANITY</span></span>
+          </a>
+          <p>Professional home hygiene, mattress cleaning, and sofa extraction service for healthier living spaces.</p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+            <a href="#" class="icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-col">
+          <h4>SERVICES</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#mattress">Mattress Cleaning</a></li>
+            <li><a href="services.html#sofa">Sofa Cleaning</a></li>
+            <li><a href="services.html#pillow">Pillow Sanitization</a></li>
+            <li><a href="services.html#upholstery">Upholstery Care</a></li>
+            <li><a href="services.html#stain">Stain Treatment</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+          <h4>COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html">Packages & Pricing</a></li>
+            <li><a href="blog.html">Hygiene Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Support & Newsletter -->
+        <div class="footer-col">
+          <h4>NEWSLETTER</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Subscribe for home care guides and seasonal service offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-accent" style="padding: 0.65rem 1rem;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 PureSanity Mattress Cleaning & Deep Sanitization Service. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

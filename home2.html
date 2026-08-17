@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Home Hygiene Journal | Science of Clean Sleep | PureSanity</title>
+  <meta name="description" content="Explore the editorial journal on mattress sanitization science, fabric care research, and expert home hygiene guidance by PureSanity.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css" id="rtl-stylesheet" disabled>
+  
+  <style>
+    /* Custom Editorial Overrides for Home 2 */
+    .journal-hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 6rem;
+      background: #0B1716;
+      color: #FFFFFF;
+      overflow: hidden;
+    }
+    .journal-hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.45;
+    }
+    .journal-hero-content {
+      position: relative;
+      z-index: 5;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .asymmetric-grid {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    @media (max-width: 991px) {
+      .asymmetric-grid { grid-template-columns: 1fr; }
+    }
+    .article-preview-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="#123B3A"/>
+            <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+            <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+          </svg>
+          <span>PURE<span class="highlight">JOURNAL</span></span>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-dropdown">
+            <a href="index.html" class="nav-link active">Home <i class="fas fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">Home 1 - Main Landing</a></li>
+              <li><a href="home2.html">Home 2 - Hygiene Journal</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="packages.html" class="nav-link">Packages</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="icon-btn theme-toggle-btn"><i class="fas fa-cog"></i></button>
+          <button class="icon-btn rtl-toggle-btn"><i class="fas fa-right-left"></i></button>
+          <a href="login.html" class="btn btn-accent header-cta"><i class="fas fa-user"></i> Login</a>
+          <button class="hamburger-btn"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo"><span>PURE<span class="highlight">JOURNAL</span></span></a>
+      <button class="drawer-close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home 1 - Main Landing</a></li>
+      <li><a href="home2.html" class="drawer-link">Home 2 - Hygiene Journal</a></li>
+      <li><a href="about.html" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link">Services</a></li>
+      <li><a href="blog.html" class="drawer-link">Blog & Tips</a></li>
+      <li><a href="packages.html" class="drawer-link">Packages</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact & Booking</a></li>
+    </ul>
+    <div class="drawer-footer" style="padding: 1.5rem 1rem; border-top: 1px solid var(--border-color); text-align: center;">
+      <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1rem;">
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-cog"></i></button>
+        <button class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL"><i class="fas fa-right-left"></i></button>
+      </div>
+      <a href="login.html" class="btn btn-accent" style="width: 100%;"><i class="fas fa-user"></i> Login</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- EDITORIAL HERO (HOME 2 WITH LOCAL VIDEO) -->
+    <section class="journal-hero">
+      <video autoplay muted loop playsinline class="journal-hero-video" poster="image/_4P25n7UADZ_3Myt_7dckMSz3OppQcbLtlNFvZObtInCGoWlTV7Jc2nnK0QuH3XIUf3FR6dJ78U5szXtAdI7uKmaJunBnzMZB-SCvLZZLRdcooDwXsm20fQss5DAobQsBlWRioY7GuYZn6D10hN7PmA7f6-o2EFhLHAYmZhesylT2.jpg">
+        <source src="video/4201876-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        <img src="image/_4P25n7UADZ_3Myt_7dckMSz3OppQcbLtlNFvZObtInCGoWlTV7Jc2nnK0QuH3XIUf3FR6dJ78U5szXtAdI7uKmaJunBnzMZB-SCvLZZLRdcooDwXsm20fQss5DAobQsBlWRioY7GuYZn6D10hN7PmA7f6-o2EFhLHAYmZhesylT2.jpg" alt="Editorial Bedroom">
+      </video>
+
+      <div class="container">
+        <div class="journal-hero-content">
+          <span class="tech-badge" style="background: rgba(232,168,78,0.2); color: var(--accent); border-color: var(--accent);">EDITORIAL EDITION NO. 02</span>
+          <h1 style="color: #FFFFFF; font-size: clamp(2.8rem, 5.5vw, 4.8rem); margin: 1.5rem 0;">
+            THE SCIENCE OF A CLEANER SLEEP SPACE.
+          </h1>
+          <p style="color: rgba(255,255,255,0.85); font-size: 1.2rem; max-width: 650px; margin: 0 auto 2rem;">
+            An editorial guide to interior fabric longevity, deep micro-extraction techniques, and how clinical cleanliness elevates daily wellness.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <a href="#editorial-section" class="btn btn-accent"><i class="fas fa-book-open"></i> Read Issue</a>
+            <a href="contact.html" class="btn btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.3);"><i class="fas fa-calendar-alt"></i> Reserve Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL ESSAY SECTION (REDESIGNED LUXURY FEATURE) -->
+    <section id="editorial-section" class="section-padding" style="background: var(--card-bg);">
+      <div class="container">
+        <div class="asymmetric-grid">
+          <!-- Left Content -->
+          <div>
+            <span class="tech-badge" style="margin-bottom: 1rem;"><i class="fas fa-microscope"></i> ESSAY 01 â€¢ FABRIC INTEGRITY</span>
+            <h2 style="font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.15; margin-bottom: 1.5rem;">
+              BEYOND THE SURFACE: HOW DUST ACCUMULATES IN MODERN MEMORY FOAM
+            </h2>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Modern mattresses engineered with high-density memory foam provide exceptional pressure relief, but their micro-porous cell structure acts as a passive collector for microscopic particles over time.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 2rem;">
+              Unlike traditional innerspring cores where air circulates freely, dense memory foam absorbs ambient humidity and daily body oils. High-pressure extraction penetrates deep into core layers to restore ventilation without compromising structural support.
+            </p>
+
+            <!-- 3 Stat Blocks Grid -->
+            <div class="stat-grid-3" style="padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+              <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); text-align: center;">
+                <h3 style="color: var(--primary); font-size: 1.85rem; margin-bottom: 0.2rem;">78%</h3>
+                <small style="color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Particle Reduction</small>
+              </div>
+              <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); text-align: center;">
+                <h3 style="color: var(--accent); font-size: 1.85rem; margin-bottom: 0.2rem;">4.5h</h3>
+                <small style="color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Average Dry Time</small>
+              </div>
+              <div style="background: var(--bg-light); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); text-align: center;">
+                <h3 style="color: var(--primary); font-size: 1.85rem; margin-bottom: 0.2rem;">100%</h3>
+                <small style="color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Foam Safe</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Clean Image & Sleek Tech Card -->
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+              <img src="image/_4P25n7UADZ_3Myt_7dckMSz3OppQcbLtlNFvZObtInCGoWlTV7Jc2nnK0QuH3XIUf3FR6dJ78U5szXtAdI7uKmaJunBnzMZB-SCvLZZLRdcooDwXsm20fQss5DAobQsBlWRioY7GuYZn6D10hN7PmA7f6-o2EFhLHAYmZhesylT2.jpg" alt="Memory Foam Fabric Extraction" style="width: 100%; height: 380px; object-fit: cover; transition: transform 0.5s ease;">
+            </div>
+
+            <div style="background: var(--primary); color: #FFFFFF; padding: 1.5rem 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border-left: 4px solid var(--accent); display: flex; align-items: center; gap: 1.25rem;">
+              <i class="fas fa-atom" style="font-size: 2rem; color: var(--accent); flex-shrink: 0;"></i>
+              <div>
+                <span style="text-transform: uppercase; letter-spacing: 1.5px; color: var(--secondary); font-weight: 800; font-size: 0.75rem; display: block; margin-bottom: 0.25rem;">TECHNOLOGY INSIGHT</span>
+                <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0; line-height: 1.5;">High-pressure micro-extraction removes deep trapped moisture and particulate matter without breaking down internal foam elasticity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW DEDICATED SPOTLIGHT SECTION FOR THE THREE FEATURED IMAGES -->
+    <section class="section-padding" style="background: var(--card-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem;">
+          <span class="eyebrow">EXPERT RESTORATION SHOWCASE</span>
+          <h2>FEATURED FABRIC & UPHOLSTERY SPOTLIGHT</h2>
+          <p>Highlighting our deep extraction techniques and fabric sanitization care across mattresses, sectionals, and dining upholstery.</p>
+        </div>
+
+        <div class="why-us-grid">
+          <!-- Spotlight 1: King Memory Foam Mattress -->
+          <div class="service-card">
+            <div class="service-card-image">
+              <img src="image/King Memory Foam Mattress.jpg" alt="King Memory Foam Mattress">
+              <span class="tech-badge" style="position: absolute; top: 12px; left: 12px; background: rgba(16,35,34,0.8); color: #fff;">DEEP EXTRACTION</span>
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">King Memory Foam Mattress</h3>
+                <p class="service-card-desc">Deep high-pressure suction lift engineered to pull organic allergens from deep memory foam layers.</p>
+              </div>
+              <div class="service-card-footer">
+                <span class="service-price">Mattress Care</span>
+                <a href="services.html#mattress" class="explore-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spotlight 2: L-Shaped Fabric Sofa -->
+          <div class="service-card">
+            <div class="service-card-image">
+              <img src="image/LSHAP.jpg" alt="L-Shaped Fabric Sofa">
+              <span class="tech-badge" style="position: absolute; top: 12px; left: 12px; background: rgba(16,35,34,0.8); color: #fff;">FABRIC SAFE</span>
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">L-Shaped Fabric Sofa</h3>
+                <p class="service-card-desc">Thorough upholstery rejuvenation for living room sectionals, lifting deep trapped dust and restoring weave sheen.</p>
+              </div>
+              <div class="service-card-footer">
+                <span class="service-price">Sofa Care</span>
+                <a href="services.html#sofa" class="explore-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spotlight 3: Velvet Dining Armchairs -->
+          <div class="service-card">
+            <div class="service-card-image">
+              <img src="image/Velvet Dinin.jpg" alt="Velvet Dining Armchairs">
+              <span class="tech-badge" style="position: absolute; top: 12px; left: 12px; background: rgba(16,35,34,0.8); color: #fff;">UV SANITIZATION</span>
+            </div>
+            <div class="service-card-body">
+              <div>
+                <h3 class="service-card-title">Velvet Dining Upholstery</h3>
+                <p class="service-card-desc">Precision low-moisture spot treatment and ultraviolet light pass designed for delicate velvet armchairs.</p>
+              </div>
+              <div class="service-card-footer">
+                <span class="service-price">Upholstery Care</span>
+                <a href="services.html#upholstery" class="explore-link">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL HIGHLIGHT GRID WITH LOCAL IMAGES -->
+    <section class="section-padding" style="background: var(--bg-light);">
+      <div class="container">
+        <div style="text-align: center; max-width: 640px; margin: 0 auto 3.5rem;">
+          <span class="eyebrow">CURATED ARTICLES</span>
+          <h2>THE HOME HYGIENE DIGEST</h2>
+          <p>Insights into upholstery care, mattress care intervals, and stain neutralization science.</p>
+        </div>
+
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="image/cPXfCQsG8S5qYexxA0EKft06VVL2Pd8UI8Mlw13gvAiRXKX386a5r5qG1s0D18sCTVJtpZbynvkMrfbFVYC69o32x8IHXp8vN0Rm4J3tSzLmoORa4PJip13pCAlzjQWOVkaaQDBfJZLKu0cCks6P_ArynJWsbgd3hBsWqMIkhoVfM.jpg" alt="Linen Sofa Care">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>FABRIC CARE</span>
+                <span>â€¢ 5 MIN READ</span>
+              </div>
+              <h3 class="blog-card-title">How to Maintain Linen & Velvet Couches Between Deep Clean Visits</h3>
+              <p style="font-size: 0.875rem; color: var(--text-muted);">Simple daily practices to prevent surface oil accumulation and preserve fabric sheen.</p>
+              <a href="blog-single.html" class="explore-link" style="margin-top: 1rem;">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="image/g9Xo7cSd7O1MMD3TKFVMG4cgk4uLA_6QGSN-Wn8C1u-XYD8Ra-OvwgX6mcbpgKLCoO9axcBpm4nFhCcw552-OdDpyihA-JMtOiqJEh4iyL86bXnYjOjUSoVpYNtvNSuGQOFq6P3fgkwVxL3Fqi9hFDJyf_feH02I0a3GG2GqCZuIr.jpg" alt="Mattress Sanitization">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>HYGIENE TECH</span>
+                <span>â€¢ 7 MIN READ</span>
+              </div>
+              <h3 class="blog-card-title">Understanding UV Sanitization: What Science Tells Us About Light Pass Care</h3>
+              <p style="font-size: 0.875rem; color: var(--text-muted);">How controlled ultraviolet wavelength treatments provide a hygienic non-toxic finish.</p>
+              <a href="blog-single.html" class="explore-link" style="margin-top: 1rem;">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="image/lujCbq7yTnpmYVMMrUcj95WeAnMQVhTtrYolo8erT2blVV4hHNpiQcgHIrMFP1qtc5olShkrdojDDVngnbV69zrSDVox4B_l-XXYg0EYIpzmibztTTOxAOFHtYYyTShWp7H9BOkFICmpJV4VI_tf8G5gauKt-kkF5g2ad5vnnrLpt.jpg" alt="Bedroom Environment">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>SLEEP WELLNESS</span>
+                <span>â€¢ 4 MIN READ</span>
+              </div>
+              <h3 class="blog-card-title">Creating a Low-Allergen Bedroom Sanctuary for Better Rest</h3>
+              <p style="font-size: 0.875rem; color: var(--text-muted);">Practical humidity controls, mattress encasements, and deep extraction intervals.</p>
+              <a href="blog-single.html" class="explore-link" style="margin-top: 1rem;">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDY SPOTLIGHT WITH LOCAL IMAGE -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="article-preview-card">
+          <div class="asymmetric-grid">
+            <div>
+              <span class="tech-badge">CASE STUDY â€¢ LUXURY BOUTIQUE HOTEL</span>
+              <h2 style="margin: 1rem 0;">RESTORING 45 KING SUITES IN 48 HOURS</h2>
+              <p>
+                When a premier downtown hotel needed comprehensive mattress and headboard deep sanitization before international guest arrivals, PureSanity dispatched a 6-technician mobile team equipped with high-efficiency extraction units.
+              </p>
+              <ul class="check-list">
+                <li><i class="fas fa-check"></i> 100% On-time completion without room downtime</li>
+                <li><i class="fas fa-check"></i> Deep stain removal and enzyme odor treatment</li>
+                <li><i class="fas fa-check"></i> Full UV sanitization finish for every guest bed</li>
+              </ul>
+              <a href="contact.html" class="btn btn-accent"><i class="fas fa-calendar-check"></i> Book Commercial Service</a>
+            </div>
+
+            <div>
+              <img src="image/opZcAMm_eV4lZrqUd0zSJlehZgtOxuziPGXCNmFg8W6bdDK8p9ndtAyTUg1l8Lqa_Sqah4GVTLp9AZBamjx_VyYWXlTFxOilMgqi8UbA3qRgqDjZC33DXBMkMMoERIf6a0eH4LMgweQItT5p2sy3xf6osxWoNlxbht4bGDZD4F3cw.jpg" alt="Hotel Suite Mattress Sanitization" style="border-radius: var(--radius-md); width: 100%; height: 380px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL JOURNAL CTA -->
+    <section class="section-padding" style="background: var(--bg-light);">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="eyebrow">EXPERIENCE DEEP CLEANING</span>
+          <h2>TRANSFORM YOUR SLEEP SPACE TODAY</h2>
+          <p>Book your home visit with our specialized mobile technician team.</p>
+          <div style="margin-top: 2rem;">
+            <a href="contact.html" class="btn btn-accent"><i class="fas fa-calendar-check"></i> Schedule Home Visit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="#123B3A"/>
+              <path d="M12 28C12 21.3726 17.3726 16 24 16H28V20C28 24.4183 24.4183 28 20 28H12Z" fill="#B9D8D1"/>
+              <circle cx="27" cy="13" r="4" fill="#E8A84E"/>
+            </svg>
+            <span>PURE<span class="highlight">SANITY</span></span>
+          </a>
+          <p>Professional home hygiene, mattress cleaning, and sofa extraction service for healthier living spaces.</p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+            <a href="#" class="icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-col">
+          <h4>SERVICES</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#mattress">Mattress Cleaning</a></li>
+            <li><a href="services.html#sofa">Sofa Cleaning</a></li>
+            <li><a href="services.html#pillow">Pillow Sanitization</a></li>
+            <li><a href="services.html#upholstery">Upholstery Care</a></li>
+            <li><a href="services.html#stain">Stain Treatment</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+          <h4>COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html">Packages & Pricing</a></li>
+            <li><a href="blog.html">Hygiene Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Support & Newsletter -->
+        <div class="footer-col">
+          <h4>NEWSLETTER</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Subscribe for home care guides and seasonal service offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-accent" style="padding: 0.65rem 1rem;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 PureSanity Mattress Cleaning & Deep Sanitization Service. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
