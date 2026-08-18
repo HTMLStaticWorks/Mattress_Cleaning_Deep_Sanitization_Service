@@ -80,6 +80,7 @@
     @media (max-width: 576px) {
       .auth-page-wrap {
         flex-direction: column;
+        padding: 1rem 0.5rem;
       }
       .auth-actions {
         position: relative;
@@ -91,7 +92,8 @@
         margin-bottom: 1.25rem;
       }
       .auth-card {
-        padding: 2.5rem 1.5rem;
+        padding: 2.5rem 1rem;
+        max-width: 100%;
       }
     }
   </style>
@@ -114,7 +116,7 @@
         <span>PURE<span class="highlight">SANITY</span></span>
       </a>
 
-      <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">WELCOME BACK</h2>
+      <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem;">WELCOME BACK</h2>
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem;">Log in to manage home visits & service schedules.</p>
 
       <form id="login-form" onsubmit="event.preventDefault(); alert('Login successful! Redirecting...'); window.location.href='index.html';">
@@ -130,10 +132,10 @@
             <i class="fas fa-eye auth-password-icon" onclick="const input = this.previousElementSibling; if (input.type === 'password') { input.type = 'text'; this.classList.remove('fa-eye'); this.classList.add('fa-eye-slash'); } else { input.type = 'password'; this.classList.remove('fa-eye-slash'); this.classList.add('fa-eye'); }"></i>
           </div>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
-            <label style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.25rem; cursor: pointer;">
+            <label style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.25rem; cursor: pointer; white-space: nowrap;">
               <input type="checkbox"> Remember me
             </label>
-            <a href="#" style="font-size: 0.85rem; color: var(--accent); font-weight: 600;">Forgot Password?</a>
+            <a href="#" style="font-size: 0.85rem; color: var(--accent); font-weight: 600; white-space: nowrap;">Forgot Password?</a>
           </div>
         </div>
 
@@ -146,7 +148,7 @@
       <button class="social-btn"><i class="fab fa-google" style="color: #ea4335;"></i> Continue with Google</button>
       <button class="social-btn"><i class="fab fa-apple"></i> Continue with Apple</button>
 
-      <div style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+      <div style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">
         Don't have an account? <a href="register.html" style="color: var(--primary); font-weight: 700;">Create Account</a>
       </div>
     </div>
